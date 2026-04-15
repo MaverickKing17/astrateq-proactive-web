@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Astrateq Gadgets</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border h-[60px] flex items-center">
+        <div class="max-w-7xl w-full mx-auto px-10 flex justify-between items-center">
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-[18px] font-bold tracking-tight font-display">Astrateq Gadgets</a>
+            </div>
+            <nav class="hidden md:flex items-center text-[13px] font-medium text-text">
+                <a href="/" class="text-accent ml-6">Shop</a>
+                <a href="/dashcam" class="ml-6 hover:text-accent transition-colors">Dash Cam</a>
+                <a href="/bundle" class="ml-6 hover:text-accent transition-colors">Family Bundle</a>
+                <a href="#faq" class="ml-6 hover:text-accent transition-colors">FAQ</a>
+                <div class="ml-8 border-l border-border pl-4 flex items-center space-x-2 text-[11px] font-bold text-muted">
+                    <span class="text-text">EN</span>
+                    <span>|</span>
+                    <a href="/fr/shop" class="hover:text-text transition-colors">FR</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-10 py-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-5">
+        <!-- Hero & Products Column -->
+        <div class="flex flex-col gap-4">
+            <!-- Hero Section -->
+            <section class="flex flex-col gap-4">
+                <h1 class="text-[32px] font-semibold leading-[1.1] tracking-tight">
+                    Choose the protection level<br class="hidden md:block"> that fits your family.
+                </h1>
+                <p class="text-[15px] text-muted max-w-[500px] leading-[1.4]">
+                    Secure your peace of mind with a $25 refundable reservation. Get $50 off at launch. No subscriptions, no cloud—just secure local storage.
+                </p>
+                
+                <!-- Trust Badges -->
+                <div class="flex flex-wrap gap-2.5 mt-2">
+                    <span class="badge">$25 Refundable</span>
+                    <span class="badge">$50 Off Launch</span>
+                    <span class="badge">~90 Days Shipping</span>
+                    <span class="badge">Local Only</span>
+                </div>
+            </section>
+
+            <!-- Product Cards -->
+            <section id="products" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                <!-- Card A: Bundle (Recommended) -->
+                <div class="card card-recommended relative">
+                    <div class="absolute -top-2.5 left-5 bg-accent text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-[4px]">
+                        Recommended
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="text-[18px] font-semibold mb-2">Family Safety Bundle</h2>
+                        <ul class="space-y-1.5 text-[13px] text-muted">
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Dash Cam (Road-facing)</li>
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>128GB Endurance SD Card</li>
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Mobile App Access</li>
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Local-only (No cloud)</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <span class="block text-[14px] font-semibold mb-4">$25 to reserve</span>
+                        <a href="BUNDLE_STRIPE_URL" class="btn-primary w-full">Reserve Bundle</a>
+                        <a href="/bundle" class="block text-center text-[12px] font-medium text-accent mt-2.5 hover:underline">Learn about the bundle</a>
+                    </div>
+                </div>
+
+                <!-- Card B: Dash Cam -->
+                <div class="card">
+                    <div class="mb-5">
+                        <h2 class="text-[18px] font-semibold mb-2">Dash Cam</h2>
+                        <ul class="space-y-1.5 text-[13px] text-muted">
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>High-definition recording</li>
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Screen + App experience</li>
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>No monthly subscription</li>
+                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Zero cloud dependence</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <span class="block text-[14px] font-semibold mb-4">$25 to reserve</span>
+                        <a href="DASHCAM_STRIPE_URL" class="btn-secondary w-full">Reserve Dash Cam</a>
+                        <a href="/dashcam" class="block text-center text-[12px] font-medium text-accent mt-2.5 hover:underline">View specifications</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Side Panel -->
+        <aside class="flex flex-col gap-5">
+            <!-- Quick Comparison -->
+            <div class="panel-box">
+                <div class="panel-title">Quick Comparison</div>
+                <div class="table-row"><span>Best for families</span><strong class="text-text">Bundle</strong></div>
+                <div class="table-row"><span>Ready-to-record</span><strong class="text-text">Bundle</strong></div>
+                <div class="table-row"><span>Includes 128GB card</span><strong class="text-text">Bundle</strong></div>
+                <div class="table-row"><span>Local-only storage</span><strong class="text-text">Both</strong></div>
+                <div class="table-row"><span>$50 off at launch</span><strong class="text-text">Both</strong></div>
+            </div>
+
+            <!-- Accessories -->
+            <div class="panel-box">
+                <div class="panel-title">Available at launch</div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="bg-bg border border-dashed border-border rounded-md p-2 text-[10px]">
+                        <strong class="block text-text">Hardwire Kit</strong>
+                        <p class="text-muted">Clean pro install</p>
+                        <span class="text-accent font-bold mt-1 block">COMING SOON</span>
+                    </div>
+                    <div class="bg-bg border border-dashed border-border rounded-md p-2 text-[10px]">
+                        <strong class="block text-text">Adhesive Pack</strong>
+                        <p class="text-muted">Extra mounts</p>
+                        <span class="text-accent font-bold mt-1 block">COMING SOON</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-[#F5F5F7] border-t border-border py-10 px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="faq-item">
+                <h4 class="text-[12px] font-bold mb-1">Is my $25 refundable?</h4>
+                <p class="text-[11px] text-muted leading-[1.4]">Yes. Cancel anytime before shipping for a full, no-questions-asked refund.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="text-[12px] font-bold mb-1">When will it ship?</h4>
+                <p class="text-[11px] text-muted leading-[1.4]">Targeting ~90 days for Phase 1 batches. We'll keep you updated on progress.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="text-[12px] font-bold mb-1">Subscription required?</h4>
+                <p class="text-[11px] text-muted leading-[1.4]">None. We believe your data belongs to you. No recurring fees, ever.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="text-[12px] font-bold mb-1">Inside recording?</h4>
+                <p class="text-[11px] text-muted leading-[1.4]">Phase 1 units focus on high-fidelity road-facing protection and local storage.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="text-[12px] font-bold mb-1">Is the app required?</h4>
+                <p class="text-[11px] text-muted leading-[1.4]">Optional. You can manage everything via the on-device screen if preferred.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="text-[12px] font-bold mb-1">What's in the bundle?</h4>
+                <p class="text-[11px] text-muted leading-[1.4]">Includes the Dash Cam and a dash-cam rated 128GB microSD card for reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-[#86868B] h-[60px] flex items-center px-10 text-[10px]">
+        <div class="max-w-7xl w-full mx-auto flex justify-between items-center">
+            <div>
+                &copy; 2024 Astrateq Gadgets. 
+                <a href="#faq" class="text-white hover:underline transition-colors">Phase 1 is local-only; no cloud required.</a>
+                <span class="mx-2">|</span>
+                Contact: <a href="mailto:astrateqgadgets@yahoo.com" class="text-white hover:underline transition-colors">astrateqgadgets@yahoo.com</a>
+            </div>
+            <div class="hidden md:block">
+                Driver remains responsible at all times; assistance only.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

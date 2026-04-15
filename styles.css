@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  --color-bg: #FAFAFB;
+  --color-text: #1D1D1F;
+  --color-accent: #0066CC;
+  --color-card-bg: #FFFFFF;
+  --color-border: #E5E5E7;
+  --color-muted: #86868B;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-text antialiased bg-bg;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-text;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2.5 text-[13px] font-semibold text-white transition-all bg-text rounded-md hover:bg-slate-800 active:scale-95;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2.5 text-[13px] font-semibold text-text transition-all bg-[#F5F5F7] border border-border rounded-md hover:bg-slate-100 active:scale-95;
+  }
+  .card {
+    @apply p-5 bg-card-bg border border-border rounded-xl transition-all;
+  }
+  .card-recommended {
+    @apply border-accent shadow-[0_8px_24px_rgba(0,102,204,0.06)];
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-1 text-[11px] font-semibold rounded-[4px] bg-[#F0F0F2] text-[#48484A];
+  }
+  .panel-box {
+    @apply bg-white border border-border rounded-xl p-4;
+  }
+  .panel-title {
+    @apply text-[12px] uppercase tracking-wider font-bold mb-3 text-muted;
+  }
+  .table-row {
+    @apply flex justify-between text-[11px] py-1.5 border-b border-[#F5F5F7] last:border-0;
+  }
+}
