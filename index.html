@@ -31,95 +31,162 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-10 py-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-5">
+    <main class="max-w-7xl mx-auto px-10 py-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8">
         <!-- Hero & Products Column -->
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 animate-fade-up" style="animation-delay: 0.1s;">
             <!-- Hero Section -->
-            <section class="flex flex-col gap-4">
-                <h1 class="text-[32px] font-semibold leading-[1.1] tracking-tight">
+            <section class="flex flex-col gap-5 pt-4">
+                <h1 class="text-[42px] font-bold leading-[1.05] tracking-tight text-text">
                     Choose the protection level<br class="hidden md:block"> that fits your family.
                 </h1>
-                <p class="text-[15px] text-muted max-w-[500px] leading-[1.4]">
+                <p class="text-[16px] text-muted max-w-[540px] leading-[1.5]">
                     Secure your peace of mind with a $25 refundable reservation. Get $50 off at launch. No subscriptions, no cloud—just secure local storage.
                 </p>
                 
                 <!-- Trust Badges -->
-                <div class="flex flex-wrap gap-2.5 mt-2">
-                    <span class="badge">$25 Refundable</span>
-                    <span class="badge">$50 Off Launch</span>
-                    <span class="badge">~90 Days Shipping</span>
-                    <span class="badge">Local Only</span>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="badge">
+                        <svg class="w-3.5 h-3.5 mr-1.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        $25 Refundable
+                    </span>
+                    <span class="badge">
+                        <svg class="w-3.5 h-3.5 mr-1.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        $50 Off Launch
+                    </span>
+                    <span class="badge">
+                        <svg class="w-3.5 h-3.5 mr-1.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        ~90 Days Shipping
+                    </span>
+                    <span class="badge">
+                        <svg class="w-3.5 h-3.5 mr-1.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        Local Only
+                    </span>
                 </div>
             </section>
 
             <!-- Product Cards -->
-            <section id="products" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+            <section id="products" class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <!-- Card A: Bundle (Recommended) -->
-                <div class="card card-recommended relative">
-                    <div class="absolute -top-2.5 left-5 bg-accent text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-[4px]">
+                <div class="card card-recommended relative border-accent/20">
+                    <div class="absolute -top-3.5 right-6 bg-accent text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
                         Recommended
                     </div>
-                    <div class="mb-5">
-                        <h2 class="text-[18px] font-semibold mb-2">Family Safety Bundle</h2>
-                        <ul class="space-y-1.5 text-[13px] text-muted">
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Dash Cam (Road-facing)</li>
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>128GB Endurance SD Card</li>
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Mobile App Access</li>
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Local-only (No cloud)</li>
+                    <div class="mb-8">
+                        <div class="w-10 h-10 bg-accent/10 rounded-xl flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                        </div>
+                        <h2 class="text-[20px] font-bold mb-3">Family Safety Bundle</h2>
+                        <ul class="space-y-3 text-[14px] text-muted">
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-accent/10 text-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                Dash Cam (Road-facing)
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-accent/10 text-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                128GB Endurance SD Card
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-accent/10 text-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                Mobile App Access
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-accent/10 text-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                Local-only (No cloud)
+                            </li>
                         </ul>
                     </div>
-                    <div class="mt-auto">
-                        <span class="block text-[14px] font-semibold mb-4">$25 to reserve</span>
-                        <a href="BUNDLE_STRIPE_URL" class="btn-primary w-full">Reserve Bundle</a>
-                        <a href="/bundle" class="block text-center text-[12px] font-medium text-accent mt-2.5 hover:underline">Learn about the bundle</a>
+                    <div class="mt-auto pt-4">
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <span class="text-[24px] font-bold text-text">$25</span>
+                            <span class="text-[13px] text-muted">to reserve</span>
+                        </div>
+                        <a href="BUNDLE_STRIPE_URL" class="btn-primary w-full py-3.5">Reserve Bundle</a>
+                        <a href="/bundle" class="block text-center text-[12px] font-bold text-accent mt-4 hover:underline flex items-center justify-center group">
+                            Learn about the bundle
+                            <svg class="w-3.5 h-3.5 ml-1 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card B: Dash Cam -->
-                <div class="card">
-                    <div class="mb-5">
-                        <h2 class="text-[18px] font-semibold mb-2">Dash Cam</h2>
-                        <ul class="space-y-1.5 text-[13px] text-muted">
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>High-definition recording</li>
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Screen + App experience</li>
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>No monthly subscription</li>
-                            <li class="flex items-center"><span class="mr-2 text-accent font-bold">✓</span>Zero cloud dependence</li>
+                <div class="card flex flex-col">
+                    <div class="mb-8">
+                        <div class="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center mb-5 text-slate-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h2 class="text-[20px] font-bold mb-3">Dash Cam</h2>
+                        <ul class="space-y-3 text-[14px] text-muted">
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mr-3 flex-shrink-0 font-bold text-[10px]">✓</span>
+                                High-definition recording
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mr-3 flex-shrink-0 font-bold text-[10px]">✓</span>
+                                Screen + App experience
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mr-3 flex-shrink-0 font-bold text-[10px]">✓</span>
+                                No monthly subscription
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-5 h-5 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mr-3 flex-shrink-0 font-bold text-[10px]">✓</span>
+                                Zero cloud dependence
+                            </li>
                         </ul>
                     </div>
-                    <div class="mt-auto">
-                        <span class="block text-[14px] font-semibold mb-4">$25 to reserve</span>
-                        <a href="DASHCAM_STRIPE_URL" class="btn-secondary w-full">Reserve Dash Cam</a>
-                        <a href="/dashcam" class="block text-center text-[12px] font-medium text-accent mt-2.5 hover:underline">View specifications</a>
+                    <div class="mt-auto pt-4">
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <span class="text-[24px] font-bold text-text">$25</span>
+                            <span class="text-[13px] text-muted">to reserve</span>
+                        </div>
+                        <a href="DASHCAM_STRIPE_URL" class="btn-secondary w-full py-3.5">Reserve Dash Cam</a>
+                        <a href="/dashcam" class="block text-center text-[12px] font-bold text-accent mt-4 hover:underline flex items-center justify-center group">
+                            View specifications
+                            <svg class="w-3.5 h-3.5 ml-1 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
                     </div>
                 </div>
             </section>
         </div>
 
         <!-- Side Panel -->
-        <aside class="flex flex-col gap-5">
+        <aside class="flex flex-col gap-6 lg:mt-4 animate-fade-up" style="animation-delay: 0.2s;">
             <!-- Quick Comparison -->
             <div class="panel-box">
-                <div class="panel-title">Quick Comparison</div>
-                <div class="table-row"><span>Best for families</span><strong class="text-text">Bundle</strong></div>
-                <div class="table-row"><span>Ready-to-record</span><strong class="text-text">Bundle</strong></div>
-                <div class="table-row"><span>Includes 128GB card</span><strong class="text-text">Bundle</strong></div>
-                <div class="table-row"><span>Local-only storage</span><strong class="text-text">Both</strong></div>
-                <div class="table-row"><span>$50 off at launch</span><strong class="text-text">Both</strong></div>
+                <div class="flex items-center justify-between mb-5">
+                    <div class="panel-title mb-0">Quick Comparison</div>
+                    <svg class="w-4 h-4 text-muted/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                </div>
+                <div class="space-y-1">
+                    <div class="table-row"><span>Best for families</span><strong class="text-text">Bundle</strong></div>
+                    <div class="table-row"><span>Ready-to-record</span><strong class="text-text">Bundle</strong></div>
+                    <div class="table-row"><span>Includes 128GB card</span><strong class="text-text">Bundle</strong></div>
+                    <div class="table-row"><span>Local-only storage</span><strong class="text-text">Both</strong></div>
+                    <div class="table-row"><span>$50 off at launch</span><strong class="text-text">Both</strong></div>
+                </div>
             </div>
 
             <!-- Accessories -->
-            <div class="panel-box">
+            <div class="panel-box bg-slate-50 border-none ring-1 ring-inset ring-slate-100">
                 <div class="panel-title">Available at launch</div>
-                <div class="grid grid-cols-2 gap-2">
-                    <div class="bg-bg border border-dashed border-border rounded-md p-2 text-[10px]">
-                        <strong class="block text-text">Hardwire Kit</strong>
-                        <p class="text-muted">Clean pro install</p>
-                        <span class="text-accent font-bold mt-1 block">COMING SOON</span>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white border border-border border-dashed rounded-xl p-3 shadow-sm hover:border-accent/40 transition-colors cursor-default">
+                        <strong class="block text-text text-[11px] mb-1">Hardwire Kit</strong>
+                        <p class="text-muted text-[10px] mb-2 leading-tight">Professional permanent installation kit.</p>
+                        <span class="text-accent text-[9px] font-black uppercase tracking-tighter">Coming Soon</span>
                     </div>
-                    <div class="bg-bg border border-dashed border-border rounded-md p-2 text-[10px]">
-                        <strong class="block text-text">Adhesive Pack</strong>
-                        <p class="text-muted">Extra mounts</p>
-                        <span class="text-accent font-bold mt-1 block">COMING SOON</span>
+                    <div class="bg-white border border-border border-dashed rounded-xl p-3 shadow-sm hover:border-accent/40 transition-colors cursor-default">
+                        <strong class="block text-text text-[11px] mb-1">Adhesive Pack</strong>
+                        <p class="text-muted text-[10px] mb-2 leading-tight">Additional mounting strips for 3 vehicles.</p>
+                        <span class="text-accent text-[9px] font-black uppercase tracking-tighter">Coming Soon</span>
                     </div>
                 </div>
             </div>
